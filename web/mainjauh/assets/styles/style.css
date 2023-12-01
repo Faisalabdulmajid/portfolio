@@ -1,0 +1,88 @@
+body{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background-color: #3A3AFD;
+}
+
+header{
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3A3AFD;
+    position: fixed;
+}
+
+.logo {
+color: white;
+font-weight: bold;
+}
+
+nav {
+    padding: 5px;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400px;
+    color: white;
+    text-decoration: none;
+}
+
+nav li{
+    display: inline;
+    list-style-type: none;
+}
+
+nav li span{
+    word-spacing: 0px;
+}
+
+main{
+    box-sizing: border-box;
+    padding-top: 30px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+article{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.favorite{
+    padding-left: 25px;
+}
+section{
+    padding-bottom: 50px;
+}
+
+aside{
+    padding: 50px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.biodata{
+    color: white;
+    padding-left: 100px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #3A3AFD;
+    text-align:center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-weight: bold;
+}

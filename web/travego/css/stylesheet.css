@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../font/poppins-regular-webfont.woff2') format('woff2'),
+        url('../font/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'poppinsregular';
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    background-color: #125CBB;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.logo i {
+    margin-left: 20px;
+    animation: spin 2s infinite forwards;
+}
+
+/*  */
+.nav a .fas {
+    display: none;
+}
+
+.navslide {
+    display: none;
+}
+
+/*  */
+
+.nav li {
+    display: inline;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.nav li span {
+    background-color: #ff6584;
+    padding: 10px 20px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.nav li span:hover {
+    background-color: #EA4B6B;
+    text-decoration: none;
+}
+
+.top-wrapper {
+    margin-top: 70px;
+    box-sizing: border-box;
+    background-image: url(../img/bg_top-wrapper.jpg);
+    background-size: cover;
+    height: 500px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftside {
+    width: 40%;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 64px;
+    line-height: 74px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.rightside input {
+    padding: 15px;
+    width: 280px;
+    outline: none;
+    display: block;
+    margin: 0 170px 20px 0;
+    border: 2px solid #fff;
+    border-radius: 9px;
+}
+
+.rightside button {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #ff6584;
+    border-radius: 9px;
+    background-color: #ff6584;
+    padding: 15px;
+    width: 310px;
+    cursor: pointer;
+}
+
+.rightside button:hover {
+    border: 2px solid #EA4B6B;
+    background-color: #EA4B6B;
+}
+
+main {
+    box-sizing: border-box;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deskripsi {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.deskripsi h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #EA4B6B;
+}
+
+.deskripsi h1 {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+}
+
+.deskripsi p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+
+.rate {
+    /* border: 1px solid black; */
+    width: 250px;
+}
+
+.rate h1 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.rate span {
+    color: #EA4B6B;
+    font-size: 22px;
+}
+
+.price button {
+    padding: 20px;
+    width: 180px;
+    background-color: #ff6584;
+    border: 2px solid #ff6584;
+    border-radius: 9px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.price button:hover {
+    background-color: #EA4B6B;
+    border: 2px solid #EA4B6B;
+}
+
+.price p {
+    color: #EA4B6B;
+    text-align: center;
+}
+
+.destination-wrapper {
+    padding: 30px 50px 80px;
+    position: relative;
+    border-top: 1px solid #000;
+}
+
+.destination-wrapper h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #EA4B6B;
+}
+
+.destination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.thumb img {
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 300px;
+    border-radius: 9px;
+}
+
+.thumb .responsive {
+    display: none;
+}
+
+.thumb p {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    color: #fff;
+    font-size: 42px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 75px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -9999;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .7);
+    transition: .3s;
+}
+
+.overlay:target {
+    opacity: 1;
+    z-index: 9999;
+}
+
+.overlay a {
+    color: #000;
+    font-size: 32px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    text-shadow: 0 0 10px #fff;
+}
+
+.overlay-container {
+    width: 1000px;
+    height: 450px;
+    background-color: #fff;
+    margin: 100px auto 0;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+}
+
+.overlay:target .overlay-container {
+    animation: slide 1s forwards;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.paragraph h1 {
+    font-size: 32px;
+}
+
+.paragraph p {
+    color: #000;
+    line-height: normal;
+    font-size: 16px;
+    position: static;
+    text-align: left;
+}
+
+footer {
+    background-color: #125CBB;
+    height: 260px;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.footer-logo {
+    float: left;
+    font-size: 36px;
+}
+
+.footer-list {
+    float: right;
+}
+
+.footer-list #more {
+    margin-right: 80px;
+}
+
+.footer-list ul {
+    list-style: none;
+    float: left;
+}
+
+.footer-list ul li,
+.footer-list ul p {
+    margin-bottom: 15px;
+}
+
+.footer-list ul p {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-list li i {
+    margin-right: 10px;
+}
+
+/* animasi */
+@keyframes slide {
+    0% {
+        margin-top: 0;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 100;
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
